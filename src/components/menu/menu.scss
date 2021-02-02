@@ -1,0 +1,23 @@
+@import '../../variables';
+
+.app-menu {
+	list-style: none;
+	align-items: center;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	max-width: 650px;
+	margin: $margin auto;
+	li {
+		padding: $margin / 2;
+		font-size: 2vmin;
+		a {
+			color: $main-app-text-color;
+			text-decoration: none;
+			transition: font-weight $transition-speed ease;
+			&:hover {
+				text-decoration: underline;
+				font-weight: bold;
+			}
+		}
+	}
+}

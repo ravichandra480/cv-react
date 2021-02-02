@@ -1,0 +1,10 @@
+@import './variables';
+
+.App {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	background-color: $main-app-bg;
+	height: 100vh;
+	color: $main-app-text-color;
+
+}
