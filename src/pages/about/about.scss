@@ -1,17 +1,19 @@
-@import '../../variables';
+@import '../../styles/variables';
 
 .page {
-	display: grid;
-	text-align: center;
-	justify-content: center;
-	margin-top: $margin * 4;
+
 	&--content {
 		max-width: 960px;
+		font-size: 18px;
+		line-height: 1.8;
 		ul {
 			list-style: none;
 			margin: 0;
 			padding: 0;
 			line-height: 1.8;
+			li {
+				margin-bottom: $margin;
+			}
 		}
 	}
 }

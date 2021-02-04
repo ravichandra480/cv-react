@@ -1,6 +1,6 @@
-import './main.scss'
+import './about.scss'
 
-function Main() {
+function About() {
 
 	return (
 		<main className="page">
@@ -15,7 +15,7 @@ function Main() {
 			</div>
 		</main>
 	)
-};
+}
 
 
-export default Main;
+export default About;

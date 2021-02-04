@@ -9,7 +9,6 @@ function Header() {
 			<div>RAVI CHANDRA RAVULAPATI</div>
 			<Menu></Menu>
 		</header>
-
 	);
 }
 

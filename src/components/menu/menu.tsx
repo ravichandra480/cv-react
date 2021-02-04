@@ -1,15 +1,19 @@
 import './menu.scss'
 
+import {NavLink} from "react-router-dom";
+
 function Menu() {
 
 	return (
-		<ul className="app-menu">
-			<li><a href="/">About</a></li>
-			<li><a href="/">Experience</a></li>
-			<li><a href="/">Skills</a></li>
-			<li><a href="/">Projects</a></li>
-			<li><a href="/">Contact</a></li>
-		</ul>
+		<nav>
+			<ul className="app-menu">
+				<li><NavLink exact to="/" activeClassName='is-active'>About</NavLink></li>
+				<li><NavLink to="/experience" activeClassName='is-active'>Experience</NavLink></li>
+				<li><NavLink to="/skills" activeClassName='is-active'>Skills</NavLink></li>
+				<li><NavLink to="/projects" activeClassName='is-active'>Projects</NavLink></li>
+				<li><NavLink to="/contact" activeClassName='is-active'>Contact</NavLink></li>
+			</ul>
+		</nav>
 	)
 }
 
