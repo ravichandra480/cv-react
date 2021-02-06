@@ -4,7 +4,8 @@ import React from "react";
 import {
 	BrowserRouter as Router,
 	Switch,
-	Route
+	Route,
+	BrowserRouter
 } from "react-router-dom";
 
 import Footer from './components/footer/footer';
@@ -18,7 +19,7 @@ import Contact from "./pages/contact/contact";
 function App() {
 	return (
 		<main className="app">
-			<Router>
+			<BrowserRouter basename="/cv-react">
 				<Header />
 				<section className="app--page">
 					<Switch>
@@ -39,7 +40,7 @@ function App() {
 						</Route>
 					</Switch>
 				</section>
-			</Router>
+			</BrowserRouter>
 			<Footer />
 		</main>
 	);
