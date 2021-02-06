@@ -1,0 +1,7 @@
+@import '../../styles/variables';
+
+.app--header {
+	font-size: calc(10px + 2vmin);
+	padding: $margin * 2 0 $margin * 4 0;
+	text-align: center;
+}

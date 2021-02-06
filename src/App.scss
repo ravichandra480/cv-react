@@ -1,0 +1,14 @@
+@import 'styles/variables';
+
+.app {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	background-color: $main-app-bg;
+	height: 100vh;
+	color: $main-app-text-color;
+	&--page {
+		max-width: 960px;
+		display: grid;
+		margin: 0 auto;
+	}
+}
