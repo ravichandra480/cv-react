@@ -2,24 +2,13 @@ import './experience.scss'
 
 function Experience() {
 	return (
-		<div>
-			Tata Consultancy Services
-			Total Duration10 yrs
-			TitleAssistant Consultant
-			Full-time
-			Dates EmployedDec 2016 – Present
-			Employment Duration4 yrs 3 mos
-			LocationLondon, United Kingdom
-			TitleIT Analyst
-			Dates EmployedNov 2015 – Nov 2016
-			Employment Duration1 yr 1 mo
-			LocationLondon, United Kingdom
-			Architecture, development, implementation and Research
-			TitleSystems Engineering
-			Dates EmployedMar 2011 – Oct 2015
-			Employment Duration4 yrs 8 mos
-			LocationChennai Area, India
-			Architecture, development, implementation and Research
+		<div className="organisation">
+			<div className="organisation--name">Tata Consultancy Services</div>
+			<div className="organisation--role">Assistant Consultant</div>
+			<div className="organisation--duration">Duration 10 yrs</div>
+			<div className="organisation--type">Full-time</div>
+			<div className="organisation--dates">Dates Employed : March 2011 – Present</div>
+			<div className="organisation--location">London, United Kingdom</div>
 		</div>
 	)
 }

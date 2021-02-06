@@ -9,7 +9,6 @@
 	margin: $margin auto;
 	text-align: center;
 	li {
-		padding: $margin / 2;
 		font-size: 2vmin;
 		a {
 			color: $main-app-text-color;
@@ -21,6 +20,7 @@
 			}
 		}
 		.is-active {
+			font-weight: bold;
 			border-bottom: 10px solid red;
 		}
 	}
