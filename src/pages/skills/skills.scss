@@ -1,11 +1,12 @@
 @import '../../styles/variables';
 
 .skills {
+	height: 80vh;
+	overflow-y: auto;
 	&__title {
 		border-bottom: 2px solid white;
 		text-align: center;
 		padding-bottom: $margin / 2;
-		width: 400px;
 		margin: 0 auto;
 	}
 	.tags {
