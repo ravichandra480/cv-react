@@ -2,6 +2,6 @@
 
 .app--header {
 	font-size: calc(10px + 2vmin);
-	padding: $margin * 2 0 $margin 0;
+	padding: $margin + $margin / 2 0 $margin 0;
 	text-align: center;
 }

@@ -14,6 +14,7 @@
 			color: $main-app-text-color;
 			text-decoration: none;
 			transition: font-weight $transition-speed ease;
+			font-size: 14px;
 			&:hover {
 				font-weight: bold;
 				border-bottom: 10px solid red;
