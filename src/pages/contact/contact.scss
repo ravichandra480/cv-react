@@ -1,0 +1,40 @@
+@import '../../styles/variables';
+
+.connect-social {
+	vertical-align: center;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	li {
+		&:not(:last-of-type) {
+			margin-right: 4vmin;
+		}
+		a {
+			color: #ffffff;
+			path {
+				transition: $transition-speed;
+			}
+			&:hover {
+				.npm-border {
+					fill: $primary-color;
+				}
+				.npm-body {
+					fill: $secondary-color;
+				}
+				.linkdin, .twitter {
+					fill: $primary-color;
+				}
+				.github {
+					fill: $complimentary-color;
+				}
+			}
+
+		}
+	}
+	&__npm {
+		width: 100px;
+		a {
+			vertical-align: middle;
+		}
+	}
+}

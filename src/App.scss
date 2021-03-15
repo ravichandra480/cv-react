@@ -11,9 +11,8 @@
 	&--page {
 		max-width: 960px;
 		display: grid;
-		margin: 0 auto;
+		margin: 2vmin auto 0 auto;
 		padding: 0 $margin * 2;
-		height: 80vh;
-		overflow-y: auto;
+		height: 68vh;
 	}
 }

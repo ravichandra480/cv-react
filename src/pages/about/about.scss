@@ -1,19 +1,35 @@
 @import '../../styles/variables';
 
-.page {
-
-	&--content {
-		max-width: 960px;
-		font-size: 18px;
+.about {
+	height: 68vh;
+	max-width: 960px;
+	font-size: 18px;
+	line-height: 1.8;
+	overflow-y: auto;
+	&__me {
+		margin: 0  auto 24px auto;
+		display: flex;
+		border-radius: 50%;
+		height: 20vmin;
+		width: 20vmin;
+		border-color: $primary-color;
+		border-width: 10px;
+		border-style: ridge;
+		background-color: $primary-color;
+	}
+	a {
+		color: $primary-color;
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
 		line-height: 1.8;
-		ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			line-height: 1.8;
-			li {
-				margin-bottom: $margin;
-			}
+		li {
+			margin-bottom: $margin;
 		}
 	}
 }

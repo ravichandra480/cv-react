@@ -1,28 +1,30 @@
 @import '../../styles/variables';
-
+nav {
+	margin: calc(10px + 2vmin) 0;
+}
 .app-menu {
 	list-style: none;
 	align-items: center;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	max-width: 650px;
+	max-width: calc(650px +  2vmin);
 	margin: $margin auto;
 	text-align: center;
 	li {
-		font-size: 2vmin;
+		font-size: calc(10px + 2vmin);
 		a {
 			color: $main-app-text-color;
 			text-decoration: none;
 			transition: font-weight $transition-speed ease;
-			font-size: 14px;
+			font-size: calc(10px + 1.5vmin);
 			&:hover {
 				font-weight: bold;
-				border-bottom: 10px solid red;
+				border-bottom: 10px solid $secondary-color;
 			}
 		}
 		.is-active {
 			font-weight: bold;
-			border-bottom: 10px solid red;
+			border-bottom: 10px solid $secondary-color;
 		}
 	}
 }
