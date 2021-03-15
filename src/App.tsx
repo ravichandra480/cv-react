@@ -18,7 +18,7 @@ import Contact from "./pages/contact/contact";
 function App() {
 	return (
 		<main className="app">
-			<BrowserRouter basename="/cv-react">
+			<BrowserRouter>
 				<Header />
 				<section className="app--page">
 					<Switch>
