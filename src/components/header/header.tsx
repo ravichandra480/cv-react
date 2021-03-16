@@ -42,11 +42,11 @@ class Header extends React.Component {
 		return (
 			<header className="app__header">
 				<div className="app__header__change-theme">
-					<span className={`app__header__change-theme--light ${this.state.selectedTheme === 'light' ? "selected" : ""}`}
+					<span className={`app__header__change-theme--light ${this.state.selectedTheme === 'light' ? "selected" : "no-selected"}`}
 						  onClick={() => this.setTheme("light")} role="button">
 						LIGHT
 					</span>
-					<span className={`app__header__change-theme--dark ${this.state.selectedTheme === 'dark' ? "selected" : ""}`}
+					<span className={`app__header__change-theme--dark ${this.state.selectedTheme === 'dark' ? "selected" : "no-selected"}`}
 						  onClick={() => this.setTheme("dark")}  role="button">
 						DARK
 					</span>

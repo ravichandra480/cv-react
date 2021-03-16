@@ -13,30 +13,37 @@
 		right: 0;
 		top: 0;
 		font-size: calc(6px + 0.6vmin);
-		color: $white;
 		font-weight: bold;
-		background-color: $btn-color-1;
-		.selected {
-			background-color: $btn-color-2;
-			cursor: default;
-			&:hover {
-				text-decoration: none;
-			}
-		}
 		&--light {
 			display: inline-block;
 			padding: 6px 10px;
 			cursor: pointer;
+			background-color: $white;
+			color: $black;
 			&:hover {
 				text-decoration: underline;
+			}
+			&.selected {
+				cursor: default;
+				&:hover {
+					text-decoration: none;
+				}
 			}
 		}
 		&--dark {
 			display: inline-block;
 			padding: 6px 10px;
 			cursor: pointer;
+			background-color: $black;
+			color: $white;
 			&:hover {
 				text-decoration: underline;
+			}
+			&.selected {
+				cursor: default;
+				&:hover {
+					text-decoration: none;
+				}
 			}
 		}
 	}
