@@ -7,7 +7,7 @@ function About() {
 
 	return (
 		<main className="about">
-			<img src={me} className="about__me"/>
+			<img src={me} className="about__me" alt="Ravi"/>
 			<ul>
 				<li>Around 10 years of developing web and mobile applications using HTML5, JavaScript, TypeScript, JavaScript libraries (Angular, Jquery), J2EE, NodeJS.</li>
 				<li>Working as Assistant Consultant with <a href="https://www.tcs.com/" target="_blank" rel="noreferrer">TATA Consultancy Services</a> from March 2011 to till date. Over 9 years experience in design and development of web applications using HTML5, Twitter Bootstrap, Jquery, Angular.</li>

@@ -16,16 +16,16 @@
 			}
 			&:hover {
 				.npm-border {
-					fill: $primary-color;
+					fill: var(--main-app-text-color);
 				}
 				.npm-body {
-					fill: $secondary-color;
+					fill: var(--secondary-color);
 				}
 				.linkdin, .twitter {
-					fill: $primary-color;
+					fill: var(--primary-color);
 				}
 				.github {
-					fill: $complimentary-color;
+					fill: var(--main-app-text-color);
 				}
 			}
 

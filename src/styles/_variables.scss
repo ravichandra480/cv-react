@@ -2,13 +2,31 @@
 $margin: 16px;
 $padding: 16px;
 
+// Font sizes
+$page-title: calc(14px + 2vmin);
+
 
 // colors
+// Dark theme
 $main-app-bg: #282c34;
 $main-app-text-color: #ffffff;
 $primary-color: #ffffff;
 $complimentary-color: #000000;
 $secondary-color: #cb3837;
 
+//Light theme
+$light-main-app-bg: #282c34;
+$light-main-app-text-color: #ffffff;
+$light-primary-color: #ffffff;
+$light-complimentary-color: #000000;
+$light-secondary-color: #cb3837;
+
+$btn-color-1: #663399;
+$btn-color-2: #cb3837;
+$white: #ffffff;
+
 // Animations
 $transition-speed: 150ms;
+
+// Height
+$page-body-height: 76vh;

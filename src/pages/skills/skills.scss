@@ -2,7 +2,7 @@
 
 .skills {
 	overflow-y: auto;
-	height: 68vh;
+	height: $page-body-height;
 	&__title {
 		border-bottom: 2px solid white;
 		text-align: center;
@@ -30,7 +30,7 @@
 			visibility: hidden;
 			height: 15px;
 			width: 100%;
-			border: 1px solid $main-app-text-color;
+			border: 1px solid var(--main-app-text-color);
 			position: absolute;
 			left: 0;
 			bottom: 0;
@@ -40,61 +40,61 @@
 		&__weight-1 {
 			font-size: 14px;
 			&--graph {
-				background-image: linear-gradient(90deg, $main-app-text-color 5%, $main-app-bg 95%);
+				background-image: linear-gradient(90deg, var(--main-app-text-color) 5%, var(--main-app-bg) 95%);
 			}
 		}
 		&__weight-2 {
 			font-size: 16px;
 			&--graph {
-				background-image: linear-gradient(90deg, $main-app-text-color 10%, $main-app-bg 90%);
+				background-image: linear-gradient(90deg, var(--main-app-text-color) 10%, var(--main-app-bg) 90%);
 			}
 		}
 		&__weight-3 {
 			font-size: 18px;
 			&--graph {
-				background-image: linear-gradient(90deg, $main-app-text-color 20%, $main-app-bg 80%);
+				background-image: linear-gradient(90deg, var(--main-app-text-color) 20%, var(--main-app-bg) 80%);
 			}
 		}
 		&__weight-4 {
 			font-size: 20px;
 			&--graph {
-				background-image: linear-gradient(90deg, $main-app-text-color 30%, $main-app-bg 70%);
+				background-image: linear-gradient(90deg, var(--main-app-text-color) 30%, var(--main-app-bg) 70%);
 			}
 		}
 		&__weight-5 {
 			font-size: 22px;
 			&--graph {
-				background-image: linear-gradient(90deg, $main-app-text-color 40%, $main-app-bg 60%);
+				background-image: linear-gradient(90deg, var(--main-app-text-color) 40%, var(--main-app-bg) 60%);
 			}
 		}
 		&__weight-6 {
 			font-size: 24px;
 			&--graph {
-				background-image: linear-gradient(90deg, $main-app-text-color 50%, $main-app-bg 50%);
+				background-image: linear-gradient(90deg, var(--main-app-text-color) 50%, var(--main-app-bg) 50%);
 			}
 		}
 		&__weight-7 {
 			font-size: 26px;
 			&--graph {
-				background-image: linear-gradient(90deg, $main-app-text-color 70%, $main-app-bg 30%);
+				background-image: linear-gradient(90deg, var(--main-app-text-color) 70%, var(--main-app-bg) 30%);
 			}
 		}
 		&__weight-8 {
 			font-size: 28px;
 			&--graph {
-				background-image: linear-gradient(90deg, $main-app-text-color 80%, $main-app-bg 20%);
+				background-image: linear-gradient(90deg, var(--main-app-text-color) 80%, var(--main-app-bg) 20%);
 			}
 		}
 		&__weight-9 {
 			font-size: 30px;
 			&--graph {
-				background-image: linear-gradient(90deg, $main-app-text-color 90%, $main-app-bg 10%);
+				background-image: linear-gradient(90deg, var(--main-app-text-color) 90%, var(--main-app-bg) 10%);
 			}
 		}
 		&__weight-10 {
 			font-size: 32px;
 			&--graph {
-				background-image: linear-gradient(90deg, $main-app-text-color 10%, $main-app-bg 0%);
+				background-image: linear-gradient(90deg, var(--main-app-text-color) 10%, var(--main-app-bg) 0%);
 			}
 		}
 	}
