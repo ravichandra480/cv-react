@@ -11,20 +11,19 @@ nav {
 	margin: $margin auto;
 	text-align: center;
 	li {
-		font-size: calc(10px + 2vmin);
 		a {
 			color: var(--main-app-text-color);
 			text-decoration: none;
 			transition: font-weight $transition-speed ease;
-			font-size: calc(10px + 1.5vmin);
+			font-size: calc(4px + 1.5vmin);
 			&:hover {
 				font-weight: bold;
-				border-bottom: 10px solid var(--secondary-color);
+				border-bottom: 4px solid var(--secondary-color);
 			}
 		}
 		.is-active {
 			font-weight: bold;
-			border-bottom: 10px solid var(--secondary-color);
+			border-bottom: 4px solid var(--secondary-color);
 		}
 	}
 }
