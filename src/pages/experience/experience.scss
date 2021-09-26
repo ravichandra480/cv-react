@@ -3,13 +3,13 @@
 .organisation {
 	line-height: 2.8;
 	font-size: 16px;
-	height: 68vh;
+	height: $page-body-height;
 	text-align: center;
 	a {
-		color: $primary-color;
+		color: var(--primary-color);
 		text-decoration: none;
 		&:hover {
-			color: $secondary-color;
+			color: var(--secondary-color);
 			text-decoration: underline;
 		}
 	}
@@ -18,8 +18,9 @@
 	}
 	&--duration {
 		&__length {
+			color: $white;
 			padding: 0 8px 6px 6px;
-			background: $secondary-color;
+			background: var(--secondary-color);
 			font-size: 14px;
 			font-family: cursive;
 		}

@@ -1,26 +1,26 @@
 @import '../../styles/variables';
 
 .about {
-	height: 68vh;
+	height: $page-body-height;
 	max-width: 960px;
 	font-size: 18px;
 	line-height: 1.8;
 	overflow-y: auto;
 	&__me {
-		margin: 0  auto 24px auto;
+		margin: 0  auto calc(24px + 4vmin) auto;
 		display: flex;
 		border-radius: 50%;
 		height: 20vmin;
 		width: 20vmin;
-		border-color: $primary-color;
+		border-color: var(--primary-color);
 		border-width: 10px;
 		border-style: ridge;
-		background-color: $primary-color;
+		background-color: var(--primary-color);
 	}
 	a {
-		color: $primary-color;
+		color: var(--primary-color);
 		&:hover {
-			color: $secondary-color;
+			color: var(--secondary-color);
 		}
 	}
 	ul {

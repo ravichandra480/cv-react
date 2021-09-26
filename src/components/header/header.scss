@@ -1,7 +1,50 @@
 @import '../../styles/variables';
 
-.app--header {
+.app__header {
 	font-size: calc(10px + 2vmin);
 	padding: $margin + $margin / 2 0 0 0;
 	text-align: center;
+	&__title {
+		font-size: $page-title;
+		font-weight: normal;
+	}
+	&__change-theme {
+		position: absolute;
+		right: 0;
+		top: 0;
+		font-size: calc(6px + 0.6vmin);
+		font-weight: bold;
+		&--light {
+			display: inline-block;
+			padding: 6px 10px;
+			cursor: pointer;
+			background-color: $white;
+			color: $black;
+			&:hover {
+				text-decoration: underline;
+			}
+			&.selected {
+				cursor: default;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		&--dark {
+			display: inline-block;
+			padding: 6px 10px;
+			cursor: pointer;
+			background-color: $black;
+			color: $white;
+			&:hover {
+				text-decoration: underline;
+			}
+			&.selected {
+				cursor: default;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
 }

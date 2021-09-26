@@ -1,6 +1,8 @@
+@import '../../styles/variables';
+
 .projects {
 	list-style: none;
-	height: 68vh;
+	height: $page-body-height;
 	overflow-y: scroll;
 	margin: 0;
 }
