@@ -1,28 +1,49 @@
 @import '../../styles/variables';
 
-.organisation {
-	line-height: 2.8;
-	font-size: 16px;
+.organisations {
 	height: $page-body-height;
-	text-align: center;
-	a {
-		color: var(--primary-color);
-		text-decoration: none;
-		&:hover {
-			color: var(--secondary-color);
-			text-decoration: underline;
+	overflow-y: scroll;
+	.organisation {
+		display: flex;
+		align-items: center;
+		line-height: 2.8;
+		font-size: 16px;
+		margin-bottom: $padding;
+		padding-left: $padding;
+		&__info {
+			border-left: 4px solid $secondary-color;
+			padding-left: 4 * $padding;
+			width: 80%;
+			img {
+				width: 100px;
+				margin-left: $padding;
+			}
 		}
-	}
-	&--name {
-		font-size: 22px;
-	}
-	&--duration {
-		&__length {
-			color: $white;
-			padding: 0 8px 6px 6px;
-			background: var(--secondary-color);
-			font-size: 14px;
-			font-family: cursive;
+		&__years {
+			width: 20%;
+			font-size: 12px;
+			text-align: right;
+			padding-right: 8px;
+		}
+		a {
+			color: var(--primary-color);
+			text-decoration: none;
+			&:hover {
+				color: var(--secondary-color);
+				text-decoration: underline;
+			}
+		}
+		&--name {
+			font-size: 22px;
+		}
+		&--duration {
+			&__length {
+				color: $white;
+				padding: 0 8px 6px 6px;
+				background: var(--secondary-color);
+				font-size: 14px;
+				font-family: cursive;
+			}
 		}
 	}
 }

@@ -7,6 +7,9 @@
 	&__title {
 		font-size: $page-title;
 		font-weight: normal;
+		small {
+			font-weight: lighter;
+		}
 	}
 	&__change-theme {
 		position: absolute;
