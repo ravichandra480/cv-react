@@ -7,7 +7,7 @@
 	&__title {
 		font-size: $page-title;
 		font-weight: normal;
-		small {
+		&--last-name {
 			font-weight: lighter;
 		}
 	}

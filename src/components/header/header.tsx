@@ -51,7 +51,7 @@ class Header extends React.Component {
 						DARK
 					</span>
 				</div>
-				<h1 className="app__header__title">Ravi Chandra <small>Ravulapati</small></h1>
+				<h1 className="app__header__title">Ravi Chandra <span className="app__header__title--last-name">Ravulapati</span></h1>
 				<Menu></Menu>
 			</header>
 		);
