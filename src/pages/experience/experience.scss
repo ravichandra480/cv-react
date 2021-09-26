@@ -10,10 +10,11 @@
 		font-size: 16px;
 		margin-bottom: $padding;
 		padding-left: $padding;
+		justify-content: center;
 		&__info {
 			border-left: 4px solid $secondary-color;
-			padding-left: 4 * $padding;
-			width: 80%;
+			padding-left: 2%;
+			width: 50%;
 			img {
 				width: 100px;
 				margin-left: $padding;
