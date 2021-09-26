@@ -21,14 +21,4 @@ jobs:
         run: npm ci
 
       - name: build
-        run: npm run build
-      - name: prepare docs
-        run: |
-          rm -rf docs
-          mv build docs
-      - name: commit docs
-        run: |
-          git config --global user.name 'ravichandra-me'
-          git config --global user.email 'ravichandra-me@users.noreply.github.com'
-          git commit -am "Automated deploy build"
-          git push
+        run: npm run deploy
