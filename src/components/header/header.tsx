@@ -24,7 +24,7 @@ class Header extends React.Component {
 	constructor(props: any) {
 		super(props);
 		this.state = {
-			selectedTheme: 'dark'
+			selectedTheme: window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 		}
 		this.setTheme(this.state.selectedTheme);
 	}
