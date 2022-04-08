@@ -6,7 +6,6 @@ function Skills() {
 			<h3 className="skills__title">Tools & Technologies</h3>
 			<ul className="tags">
 				<li className="tags__weight-9"> CSS3 <span className="tags__value tags__weight-9--graph"></span> </li>
-				<li className="tags__weight-9"> jQuery <span className="tags__value tags__weight-9--graph"></span> </li>
 				<li className="tags__weight-9"> HTML5 <span className="tags__value tags__weight-9--graph"></span></li>
 				<li className="tags__weight-4"> Java Enterprise Edition <span className="tags__value tags__weight-4--graph"></span> </li>
 				<li className="tags__weight-8"> JavaScript <span className="tags__value tags__weight-8--graph"></span> </li>
@@ -15,7 +14,7 @@ function Skills() {
 				<li className="tags__weight-8">TypeScript <span className="tags__value tags__weight-8--graph"></span></li>
 				<li className="tags__weight-2">Nodejs <span className="tags__value tags__weight-2--graph"></span></li>
 				<li className="tags__weight-8">Angular<span className="tags__value tags__weight-8--graph"></span></li>
-				<li className="tags__weight-2">XSLT<span className="tags__value tags__weight-2--graph"></span></li>
+				<li className="tags__weight-8">Elm<span className="tags__value tags__weight-8--graph"></span></li>
 				<li className="tags__weight-2">MongoDB<span className="tags__value tags__weight-2--graph"></span></li>
 				<li className="tags__weight-1">Spring<span className="tags__value tags__weight-1--graph"></span></li>
 				<li className="tags__weight-4">Apache<span className="tags__value tags__weight-4--graph"></span></li>
@@ -28,7 +27,6 @@ function Skills() {
 				<li className="tags__weight-6">RxJs<span className="tags__value tags__weight-6--graph"></span></li>
 				<li className="tags__weight-7">GruntJS<span className="tags__value tags__weight-7--graph"></span></li>
 				<li className="tags__weight-3">Docker<span className="tags__value tags__weight-3--graph"></span></li>
-				<li className="tags__weight-4">Socket.io<span className="tags__value tags__weight-4--graph"></span></li>
 				<li className="tags__weight-6">ARIA<span className="tags__value tags__weight-6--graph"></span></li>
 				<li className="tags__weight-4">npm<span className="tags__value tags__weight-4--graph"></span></li>
 			</ul>
