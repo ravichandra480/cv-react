@@ -3,7 +3,8 @@ import './App.scss';
 import {
 	Switch,
 	Route,
-	BrowserRouter
+	BrowserRouter,
+	Redirect
 } from "react-router-dom";
 
 import Footer from './components/footer/footer';
@@ -22,6 +23,9 @@ function App() {
 				<section className="app--page">
 					<Switch>
 						<Route exact path="/">
+							<Redirect to="/about" />
+						</Route>
+						<Route exact path="/about">
 							<About />
 						</Route>
 						<Route path="/experience">

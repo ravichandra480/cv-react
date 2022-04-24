@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @import '../../styles/variables';
 
 .skills {
@@ -6,7 +8,7 @@
 	&__title {
 		border-bottom: 2px solid white;
 		text-align: center;
-		padding-bottom: $margin / 2;
+		padding-bottom: math.div($margin, 2);
 		margin: 0 auto;
 	}
 	.tags {
