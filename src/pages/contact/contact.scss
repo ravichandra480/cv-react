@@ -5,6 +5,8 @@
 	list-style: none;
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	height: $page-body-height;
 	li {
 		&:not(:last-of-type) {
 			margin-right: 4vmin;
