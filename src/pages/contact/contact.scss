@@ -1,12 +1,12 @@
 @import '../../styles/variables';
 
 .connect-social {
-	vertical-align: center;
 	list-style: none;
 	display: flex;
-	align-items: center;
+	align-items: start;
 	justify-content: center;
 	height: $page-body-height;
+	padding-top: 20%;
 	li {
 		&:not(:last-of-type) {
 			margin-right: 4vmin;

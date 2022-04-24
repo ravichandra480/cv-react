@@ -17,8 +17,6 @@ function Skills() {
 				<li className="tags__weight-8">Elm<span className="tags__value tags__weight-8--graph"></span></li>
 				<li className="tags__weight-2">MongoDB<span className="tags__value tags__weight-2--graph"></span></li>
 				<li className="tags__weight-1">Spring<span className="tags__value tags__weight-1--graph"></span></li>
-				<li className="tags__weight-4">Apache<span className="tags__value tags__weight-4--graph"></span></li>
-				<li className="tags__weight-1">Hibernate<span className="tags__value tags__weight-1--graph"></span></li>
 				<li className="tags__weight-9">AJAX<span className="tags__value tags__weight-9--graph"></span></li>
 				<li className="tags__weight-6">JSON<span className="tags__value tags__weight-6--graph"></span></li>
 				<li className="tags__weight-8">Bootstrap<span className="tags__value tags__weight-8--graph"></span></li>

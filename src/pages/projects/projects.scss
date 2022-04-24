@@ -5,4 +5,17 @@
 	height: $page-body-height;
 	overflow-y: scroll;
 	margin: 0;
+
+	h3 {
+		margin-top: 0;
+		text-align: center;
+		em {
+			font-size: 14px;
+			opacity: 0.8;
+		}
+	}
+
+	div {
+		line-height: 1.6;
+	}
 }
