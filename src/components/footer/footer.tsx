@@ -1,7 +1,7 @@
 function Footer() {
 
 	return (
-		<footer>©2021</footer>
+		<footer>©2022</footer>
 	);
 }
 
