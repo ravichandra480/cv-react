@@ -24,7 +24,7 @@ function Projects() {
 					</p>
 				</li>
 				<li>
-					<h3>European Bank for Reconstruction and Development (EBRD) <br/><small><em>TATA Consultance Services</em></small></h3>
+					<h3>European Bank for Reconstruction and Development (EBRD) <br/><small><em>Tata Consultancy Services</em></small></h3>
 					<div>Jul 2018 – Aug 2021</div>
 					<div>Project descriptionTeam Size: 35 Members</div>
 					<div>Location: London (UK)</div>
@@ -43,7 +43,7 @@ function Projects() {
 					</p>
 				</li>
 				<li>
-					<h3>Internal IT <br/><small><em>TATA Consultance Services</em></small></h3>
+					<h3>Internal IT <br/><small><em>Tata Consultancy Services</em></small></h3>
 					<div>Nov 2016 – Jul 2018</div>
 					<div>Project descriptionTeam Size: 35 Members</div>
 					<div>Location : Chennai, India.</div>
@@ -62,7 +62,7 @@ function Projects() {
 					</p>
 				</li>
 				<li>
-					<h3>TalkTalk <br/><small><em>TATA Consultance Services</em></small></h3>
+					<h3>TalkTalk <br/><small><em>Tata Consultancy Services</em></small></h3>
 					<div>Sep 2015 – Dec 2016</div>
 					<div>Location : London, UK.</div>
 					<div>Language: HTML5, CSS3, AngularJs, PHP </div>
