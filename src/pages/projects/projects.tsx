@@ -79,7 +79,7 @@ function Projects() {
 					</p>
 				</li>
 				<li>
-					<h3>Internal IT <br/> <small><em>TATA Consultance Services</em></small></h3>
+					<h3>Internal IT <br/> <small><em>Tata Consultancy Services</em></small></h3>
 					<div>Oct 2012 – Sep 2015</div>
 					<div>Location : London, UK.</div>
 					<div>Language: HTML5, CSS3, AngularJs, PHP </div>
