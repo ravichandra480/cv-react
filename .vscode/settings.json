@@ -15,12 +15,8 @@
         "titleBar.activeForeground": "#e7e7e7",
         "titleBar.inactiveBackground": "#00606499",
         "titleBar.inactiveForeground": "#e7e7e799",
-        "statusBar.border": "#006064",
-        "statusBar.debuggingBackground": "#640400",
-        "statusBar.debuggingBorder": "#640400",
-        "statusBar.debuggingForeground": "#e7e7e7",
-        "tab.activeBorder": "#009197",
-        "titleBar.border": "#006064"
+        "activityBarBadge.background": "#ff9ffb",
+        "activityBarBadge.foreground": "#15202b"
     },
     "peacock.color": "#006064"
 }

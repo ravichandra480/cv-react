@@ -1,11 +1,12 @@
 @import '../../styles/variables';
 
 .app__header {
-	font-size: 2vim;
 	text-align: center;
+	margin-top: 0;
 	&__title {
 		font-size: $page-title;
 		font-weight: normal;
+		margin: 0;
 		&--last-name {
 			font-weight: lighter;
 		}

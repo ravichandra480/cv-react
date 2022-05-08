@@ -1,7 +1,6 @@
 @import '../../styles/variables';
 
 .organisations {
-	height: $page-body-height;
 	overflow-y: scroll;
 	.organisation {
 		display: flex;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './about.scss'
-import me from '../../img/me.jpg';
+import me from '../../images/me.jpg';
 
 function About() {
 

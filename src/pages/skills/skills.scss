@@ -3,8 +3,6 @@
 @import '../../styles/variables';
 
 .skills {
-	overflow-y: auto;
-	height: $page-body-height;
 	&__title {
 		border-bottom: 2px solid white;
 		text-align: center;

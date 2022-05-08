@@ -2,11 +2,11 @@
 
 .connect-social {
 	list-style: none;
-	display: flex;
-	align-items: start;
-	justify-content: center;
-	height: $page-body-height;
-	padding-top: 20%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    width: 400px;
+    margin: 0 auto;
 	li {
 		&:not(:last-of-type) {
 			margin-right: 4vmin;

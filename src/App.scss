@@ -6,13 +6,12 @@
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	background-color: var(--main-app-bg);
-	height: 100vh;
+	overflow: hidden;
 	color: var(--main-app-text-color);
 	&--page {
 		max-width: 720px;
 		display: grid;
 		margin: 2vmin auto 0 auto;
 		padding: 0 $margin * 2;
-		height: 68vh;
 	}
 }
