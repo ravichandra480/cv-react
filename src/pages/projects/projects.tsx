@@ -6,7 +6,7 @@ function Projects() {
 			<ul className="projects">
 				<li>
 					<h3>Featurespace</h3>
-					<div>Aug 2021 – Present</div>
+					<div>Aug 2021 – Oct 2022</div>
 					<div>Project descriptionTeam Size: 17 Members</div>
 					<div>Location: Cambridge (UK)</div>
 					<div>Language: HTML5, CSS3, Elm, TypeScript, Java/J2EE, AWS</div>
