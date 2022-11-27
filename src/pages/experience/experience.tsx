@@ -30,7 +30,7 @@ class Experience extends React.Component {
 							<img src={this.state.msLogo} alt="Morgan Stanley" />
 						</div>
 						<div className="organisation--role">
-							Role : Vice President
+							Role : Vice President | Senior Web Developer | Front End Architect | JavaScript | TypeScript | Angular
 						</div>
 						<div className="organisation--duration">
 							Duration&nbsp;:&nbsp;
