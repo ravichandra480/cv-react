@@ -26,7 +26,7 @@ class Experience extends React.Component {
 					<div className="organisation__years">Present - October 2022</div>
 					<div className="organisation__info">
 						<div className="organisation--name">
-							<a href="https://www.featurespace.com/" target="_blank" rel="noreferrer">Morgan Stanley</a>
+							<a href="https://www.morganstanley.com/" target="_blank" rel="noreferrer">Morgan Stanley</a>
 							<img src={this.state.msLogo} alt="Morgan Stanley" />
 						</div>
 						<div className="organisation--role">
@@ -55,7 +55,7 @@ class Experience extends React.Component {
 						</div>
 						<div className="organisation--duration">
 							Duration&nbsp;:&nbsp;
-							<span className="organisation--duration__length">1 yr 4 mos</span>
+							<span className="organisation--duration__length">1 yr 2 Months</span>
 						</div>
 						<div className="organisation--location">
 						<div>Location: <a href="https://goo.gl/maps/UhzETUBjB8FFJ5cB9" target="_blank" rel="noreferrer">140 Cambridge Science Park, Milton, Cambridge CB4 0GF</a></div>
