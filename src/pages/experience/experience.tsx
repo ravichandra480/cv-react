@@ -13,7 +13,7 @@ class Experience extends React.Component {
 		const ends = moment(new Date());
 		this.state = {
 			experience: moment.duration(ends.diff(starts)),
-			tcsLogo: 'https://www.tcs.com/content/dam/tcs/images/Newtcslogo/logo-white1x.png',
+			tcsLogo: 'https://www.tcs.com/content/dam/global-tcs/en/images/home/tcs-logo-1.svg',
 			fsLogo: 'https://www.featurespace.com/wp-content/themes/featurespace/dist/assets/full-logo-outlined.svg',
 			msLogo: morganStanley
 		};
