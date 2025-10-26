@@ -3,6 +3,8 @@ import moment from 'moment';
 
 import './experience.scss'
 import morganStanley from '../../images/ms_logo.jpg';
+import fsLogo from '../../images/FS_LOGO_GLITCH_STRIP_OUTLINE-VISA_RGB.svg';
+import tcsLogo from '../../images/TCS-logo-black-CMYK.svg';
 
 class Experience extends React.Component {
 	public state: { [key: string]: any } = {};
@@ -13,9 +15,9 @@ class Experience extends React.Component {
 		const ends = moment(new Date());
 		this.state = {
 			experience: moment.duration(ends.diff(starts)),
-			tcsLogo: 'https://www.tcs.com/content/dam/global-tcs/en/images/home/tcs-logo-1.svg',
-			fsLogo: 'https://www.featurespace.com/wp-content/themes/featurespace/dist/assets/full-logo-outlined.svg',
-			msLogo: morganStanley
+			tcsLogo: tcsLogo,
+			msLogo: morganStanley,
+			fsLogo: fsLogo
 		};
 	}
 
