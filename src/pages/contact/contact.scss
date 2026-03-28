@@ -1,42 +1,84 @@
 @import '../../styles/variables';
 
-.connect-social {
-	list-style: none;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    width: 400px;
-    margin: 0 auto;
-	li {
-		&:not(:last-of-type) {
-			margin-right: 4vmin;
-		}
-		a {
-			color: #ffffff;
-			path {
-				transition: $transition-speed;
-			}
-			&:hover {
-				.npm-border {
-					fill: var(--main-app-text-color);
-				}
-				.npm-body {
-					fill: var(--secondary-color);
-				}
-				.linkdin, .twitter {
-					fill: var(--primary-color);
-				}
-				.github {
-					fill: var(--main-app-text-color);
-				}
-			}
+.contact {
+	text-align: center;
+	padding-bottom: 80px;
 
+	.section-label {
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		text-align: center;
+
+		&::before {
+			display: none;
 		}
 	}
-	&__npm {
-		width: 100px;
-		a {
-			vertical-align: middle;
+
+	.section-title {
+		text-align: center;
+	}
+
+	&__accent {
+		background: linear-gradient(135deg, var(--accent), var(--accent-alt));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	&__text {
+		font-size: 18px;
+		color: var(--text-secondary);
+		max-width: 500px;
+		margin: 0 auto 32px;
+		line-height: 1.7;
+	}
+
+	&__email {
+		display: inline-block;
+		font-size: clamp(20px, 3vw, 28px);
+		font-weight: 700;
+		background: linear-gradient(135deg, var(--accent), var(--accent-alt));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		margin-bottom: 48px;
+		transition: opacity $transition-speed ease;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+
+	&__links {
+		display: flex;
+		justify-content: center;
+		gap: 24px;
+		flex-wrap: wrap;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		padding: 14px 28px;
+		border: 1px solid var(--border);
+		border-radius: 50px;
+		font-size: 15px;
+		font-weight: 500;
+		color: var(--text-primary);
+		text-decoration: none;
+		transition: all $transition-speed ease;
+
+		svg {
+			flex-shrink: 0;
+		}
+
+		&:hover {
+			border-color: var(--accent);
+			color: var(--accent);
+			transform: translateY(-2px);
 		}
 	}
 }

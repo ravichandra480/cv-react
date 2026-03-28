@@ -1,51 +1,143 @@
 @import '../../styles/variables';
 
-.organisations {
-	overflow-y: auto;
-	.organisation {
+.experience {
+	&__timeline {
+		position: relative;
 		display: flex;
+		flex-direction: column;
+	}
+
+	&__item {
+		display: flex;
+		gap: 32px;
+		position: relative;
+
+		@media (max-width: 600px) {
+			gap: 16px;
+		}
+	}
+
+	&__marker {
+		display: flex;
+		flex-direction: column;
 		align-items: center;
-		line-height: 2.8;
+		flex-shrink: 0;
+		width: 20px;
+	}
+
+	&__dot {
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background: var(--accent);
+		flex-shrink: 0;
+		margin-top: 8px;
+		box-shadow: 0 0 0 4px var(--dot-shadow);
+	}
+
+	&__line {
+		width: 2px;
+		flex-grow: 1;
+		background: var(--border);
+	}
+
+	&__card {
+		background: var(--bg-card);
+		border: 1px solid var(--border);
+		border-radius: 16px;
+		padding: 32px;
+		margin-bottom: 24px;
+		flex-grow: 1;
+		transition: all $transition-speed ease;
+
+		&:hover {
+			border-color: var(--accent);
+			transform: translateX(4px);
+		}
+	}
+
+	&__period {
+		font-size: 13px;
+		font-weight: 600;
+		color: var(--accent);
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	&__role {
+		font-size: 22px;
+		font-weight: 700;
+		margin: 8px 0 4px 0;
+		color: var(--text-primary);
+	}
+
+	&__company {
 		font-size: 16px;
-		margin-bottom: $padding;
-		padding-left: $padding;
-		justify-content: center;
-		&__info {
-			border-left: 4px solid $secondary-color;
-			padding-left: 2%;
-			width: 50%;
-			img {
-				width: 100px;
-				margin-left: $padding;
-				vertical-align: middle;
+		font-weight: 600;
+		margin-right: 12px;
+	}
+
+	&__location {
+		font-size: 14px;
+		color: var(--text-secondary);
+
+		&::before {
+			content: '· ';
+		}
+	}
+
+	&__highlights {
+		margin: 16px 0;
+		padding: 0;
+
+		li {
+			position: relative;
+			padding-left: 20px;
+			font-size: 15px;
+			line-height: 1.7;
+			color: var(--text-secondary);
+			list-style: none;
+
+			&::before {
+				content: '→';
+				position: absolute;
+				left: 0;
+				color: var(--accent);
 			}
 		}
-		&__years {
-			width: 20%;
-			font-size: 12px;
-			text-align: right;
-			padding-right: 8px;
-		}
-		a {
-			color: var(--primary-color);
-			text-decoration: none;
-			&:hover {
-				color: var(--secondary-color);
-				text-decoration: underline;
-			}
-		}
-		&--name {
-			font-size: 22px;
-		}
-		&--duration {
-			&__length {
-				color: $white;
-				padding: 0 8px 6px 6px;
-				background: var(--secondary-color);
-				font-size: 14px;
-				font-family: cursive;
-				font-weight: bold;
-			}
-		}
+	}
+
+	&__tech {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+		margin-top: 12px;
+	}
+
+	&__tech-tag {
+		padding: 4px 10px;
+		font-size: 12px;
+		border-radius: 6px;
+		background: var(--tag-bg);
+		border: 1px solid var(--tag-border);
+		color: var(--text-secondary);
+	}
+
+	&__education {
+		margin-top: 64px;
+		padding-top: 48px;
+		border-top: 1px solid var(--border);
+	}
+
+	&__edu-title {
+		font-size: 22px;
+		font-weight: 700;
+		margin: 8px 0;
+	}
+
+	&__edu-school {
+		font-size: 16px;
+		color: var(--text-secondary);
+		margin: 0;
 	}
 }

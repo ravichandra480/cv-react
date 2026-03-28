@@ -1,21 +1,43 @@
-import React from 'react';
-
-import './about.scss'
-import me from '../../images/me.jpg';
+import './about.scss';
 
 function About() {
-
 	return (
-		<main className="about">
-			<img src={me} className="about__me" alt="Ravi" />
-			<div>
-				<p className="about__name">Ravi Chandra Ravulapati (He/Him)</p>
-				<p className="about__job">Vice President at <a href="https://www.morganstanley.com/" target="_blank" rel="noreferrer">Morgan Stanley</a> <br />Senior Web Developer | Front End Architect | JavaScript | TypeScript | Angular | Elm<br /></p>
-				<p className="about__tags">Talks about #javascript, #websecurity, #accessability, #webdevelopment, and #frontenddevelopment</p>
+		<section className="about" id="about">
+			<span className="section-label">About</span>
+			<div className="about__content">
+				<h2 className="section-title">
+					Building the web,<br />
+					<span className="about__accent">one component at a time.</span>
+				</h2>
+				<div className="about__body">
+					<p className="about__text">
+						I'm Ravi Chandra Ravulapati — a hands-on Lead UI Engineer and Vice President at Morgan Stanley. 
+						With 15+ years of experience, I specialize in designing and delivering scalable, 
+						accessible web applications using React, Angular, and TypeScript.
+					</p>
+					<p className="about__text">
+						I have deep ownership of frontend architecture, design systems, and automated testing. 
+						My track record includes building and scaling UI platforms in regulated financial and 
+						enterprise environments — from monorepo architectures to micro front-ends.
+					</p>
+				</div>
+				<div className="about__details">
+					<div className="about__detail">
+						<span className="about__detail-label">Location</span>
+						<span className="about__detail-value">London, UK</span>
+					</div>
+					<div className="about__detail">
+						<span className="about__detail-label">Email</span>
+						<a href="mailto:rc.ravulapati@gmail.com" className="about__detail-value">rc.ravulapati@gmail.com</a>
+					</div>
+					<div className="about__detail">
+						<span className="about__detail-label">Current Role</span>
+						<span className="about__detail-value">VP, Morgan Stanley</span>
+					</div>
+				</div>
 			</div>
-		</main>
-	)
+		</section>
+	);
 }
-
 
 export default About;
