@@ -7,10 +7,7 @@
 	}
 
 	&__accent {
-		background: linear-gradient(135deg, var(--accent), var(--accent-alt));
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
+		color: var(--cds-interactive);
 	}
 
 	&__body {
@@ -26,7 +23,7 @@
 	&__text {
 		font-size: 17px;
 		line-height: 1.8;
-		color: var(--text-secondary);
+		color: var(--cds-text-secondary);
 		margin: 0;
 	}
 
@@ -36,7 +33,7 @@
 		gap: 24px;
 		margin-top: 32px;
 		padding-top: 32px;
-		border-top: 1px solid var(--border);
+		border-top: 1px solid var(--cds-border-subtle);
 
 		@media (max-width: 600px) {
 			grid-template-columns: 1fr;
@@ -47,18 +44,20 @@
 		display: flex;
 		flex-direction: column;
 		gap: 4px;
+		border: 1px solid var(--cds-border-subtle);
+		border-radius: 12px;
 
 		&-label {
 			font-size: 12px;
 			text-transform: uppercase;
 			letter-spacing: 2px;
-			color: var(--text-secondary);
+			color: var(--cds-text-secondary);
 		}
 
 		&-value {
 			font-size: 15px;
 			font-weight: 600;
-			color: var(--text-primary);
+			color: var(--cds-text-primary);
 		}
 	}
 }

@@ -1,37 +1,13 @@
-@import "styles/variables";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-*, *::before, *::after {
-  box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  line-height: 1.6;
-}
-
-ul {
-  li {
-    list-style: none;
-  }
-}
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-  transition: color $transition-speed ease;
-
-  &:hover {
-    color: var(--accent-alt);
-  }
-}
-
-html {
-  scroll-behavior: smooth;
 }

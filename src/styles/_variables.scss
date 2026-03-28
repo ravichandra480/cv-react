@@ -10,65 +10,6 @@ $hearo: 16px;
 $small: 14px;
 $xsmall: 12px;
 
-// colors
-$accent: #6C63FF;
-$accent-alt: #00C9A7;
-$bg-dark: #0a0a0f;
-$bg-dark-card: #13131a;
-$bg-dark-card-hover: #1a1a25;
-$text-light: #f0f0f5;
-$text-muted: #8888a0;
-$border-dark: #222235;
-$white: #ffffff;
-$black: #0a0a0f;
-
-// Light theme colors
-$bg-light: #ffffff;
-$bg-light-card: #f5f5f8;
-$bg-light-card-hover: #ebebf0;
-$text-dark: #1a1a2e;
-$text-dark-muted: #555570;
-$border-light: #e0e0e8;
-
-// CSS variables — dark theme (default)
-:root,
-[data-theme="dark"] {
-	--bg-primary: #{$bg-dark};
-	--bg-card: #{$bg-dark-card};
-	--bg-card-hover: #{$bg-dark-card-hover};
-	--text-primary: #{$text-light};
-	--text-secondary: #{$text-muted};
-	--accent: #{$accent};
-	--accent-alt: #{$accent-alt};
-	--border: #{$border-dark};
-	--header-blur: rgba(10, 10, 15, 0.85);
-	--hover-bg: rgba(255, 255, 255, 0.05);
-	--tag-bg: rgba(108, 99, 255, 0.08);
-	--tag-border: rgba(108, 99, 255, 0.15);
-	--tag-border-hover: rgba(108, 99, 255, 0.3);
-	--dot-shadow: rgba(108, 99, 255, 0.15);
-	--btn-shadow: rgba(108, 99, 255, 0.3);
-}
-
-// CSS variables — light theme
-[data-theme="light"] {
-	--bg-primary: #{$bg-light};
-	--bg-card: #{$bg-light-card};
-	--bg-card-hover: #{$bg-light-card-hover};
-	--text-primary: #{$text-dark};
-	--text-secondary: #{$text-dark-muted};
-	--accent: #{$accent};
-	--accent-alt: #{$accent-alt};
-	--border: #{$border-light};
-	--header-blur: rgba(255, 255, 255, 0.85);
-	--hover-bg: rgba(0, 0, 0, 0.04);
-	--tag-bg: rgba(108, 99, 255, 0.06);
-	--tag-border: rgba(108, 99, 255, 0.12);
-	--tag-border-hover: rgba(108, 99, 255, 0.25);
-	--dot-shadow: rgba(108, 99, 255, 0.2);
-	--btn-shadow: rgba(108, 99, 255, 0.25);
-}
-
 // Animations
 $transition-speed: 250ms;
 

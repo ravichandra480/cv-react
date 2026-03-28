@@ -10,10 +10,10 @@
 	transition: all 300ms ease;
 
 	&--scrolled {
-		background: var(--header-blur);
+		background: var(--cds-layer-01);
 		backdrop-filter: blur(12px);
 		-webkit-backdrop-filter: blur(12px);
-		border-bottom: 1px solid var(--border);
+		border-bottom: 1px solid var(--cds-border-subtle);
 		padding: 14px 0;
 	}
 
@@ -29,12 +29,12 @@
 	&__logo {
 		font-size: 24px;
 		font-weight: 800;
-		color: var(--text-primary);
+		color: var(--cds-text-primary);
 		text-decoration: none;
 		letter-spacing: -1px;
 
 		&-dot {
-			color: var(--accent);
+			color: var(--cds-link-primary);
 		}
 	}
 
@@ -50,16 +50,16 @@
 		justify-content: center;
 		width: 40px;
 		height: 40px;
-		border: 1px solid var(--border);
+		border: 1px solid var(--cds-border-subtle);
 		border-radius: 10px;
-		background: var(--bg-card);
-		color: var(--text-secondary);
+		background: var(--cds-layer-01);
+		color: var(--cds-text-secondary);
 		cursor: pointer;
 		transition: all $transition-speed ease;
 
 		&:hover {
-			color: var(--accent);
-			border-color: var(--accent);
+			color: var(--cds-link-primary);
+			border-color: var(--cds-link-primary);
 			transform: rotate(15deg);
 		}
 	}
@@ -75,8 +75,8 @@
 			height: 100vh;
 			width: 280px;
 			flex-direction: column;
-			background: var(--bg-card);
-			border-left: 1px solid var(--border);
+			background: var(--cds-layer-01);
+			border-left: 1px solid var(--cds-border-subtle);
 			padding: 80px 32px 32px;
 			gap: 0;
 			transition: right 300ms ease;
@@ -91,20 +91,20 @@
 		padding: 8px 18px;
 		font-size: 14px;
 		font-weight: 500;
-		color: var(--text-secondary);
+		color: var(--cds-text-secondary);
 		text-decoration: none;
 		border-radius: 8px;
 		transition: all $transition-speed ease;
 
 		&:hover {
-			color: var(--text-primary);
-			background: var(--hover-bg);
+			color: var(--cds-text-primary);
+			background: var(--cds-layer-hover-01);
 		}
 
 		@media (max-width: 600px) {
 			padding: 16px 0;
 			font-size: 18px;
-			border-bottom: 1px solid var(--border);
+			border-bottom: 1px solid var(--cds-border-subtle);
 			border-radius: 0;
 		}
 	}
@@ -123,7 +123,7 @@
 			display: block;
 			width: 24px;
 			height: 2px;
-			background: var(--text-primary);
+			background: var(--cds-text-primary);
 			transition: all 300ms ease;
 		}
 

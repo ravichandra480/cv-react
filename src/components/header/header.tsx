@@ -1,5 +1,4 @@
-import './header.scss';
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 
 const navItems = [
 	{ label: 'About', href: '#about' },
@@ -8,19 +7,9 @@ const navItems = [
 	{ label: 'Contact', href: '#contact' },
 ];
 
-function Header() {
+function Header({ isDark, onToggleTheme }: { isDark: boolean; onToggleTheme: () => void }) {
 	const [scrolled, setScrolled] = useState(false);
 	const [menuOpen, setMenuOpen] = useState(false);
-	const [theme, setTheme] = useState<'dark' | 'light'>(() => {
-		const saved = localStorage.getItem('theme');
-		if (saved === 'light' || saved === 'dark') return saved;
-		return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-	});
-
-	useEffect(() => {
-		document.documentElement.setAttribute('data-theme', theme);
-		localStorage.setItem('theme', theme);
-	}, [theme]);
 
 	useEffect(() => {
 		const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -28,24 +17,19 @@ function Header() {
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 
-	const toggleTheme = useCallback(() => {
-		setTheme(prev => prev === 'dark' ? 'light' : 'dark');
-	}, []);
-
 	return (
-		<header className={`header ${scrolled ? 'header--scrolled' : ''}`}>
-			<div className="header__inner">
-				<a href="#home" className="header__logo">
-					RC<span className="header__logo-dot">.</span>
+		<header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 dark:bg-gray-950/90 backdrop-blur-xl border-b border-gray-200 dark:border-gray-800 py-3' : 'py-5'}`}>
+			<div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
+				<a href="#home" className="text-2xl font-extrabold text-gray-900 dark:text-gray-100 no-underline tracking-tight">
+					RC<span className="text-accent">.</span>
 				</a>
-				<div className="header__right">
+				<div className="flex items-center gap-2">
 					<button
-						className="header__theme-toggle"
-						onClick={toggleTheme}
-						aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-						title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+						className="flex items-center justify-center w-10 h-10 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 text-gray-500 dark:text-gray-400 cursor-pointer transition-all duration-200 hover:text-accent hover:border-accent hover:rotate-[15deg]"
+						onClick={onToggleTheme}
+						aria-label={`Switch to ${isDark ? 'light' : 'dark'} mode`}
 					>
-						{theme === 'dark' ? (
+						{isDark ? (
 							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
 								<circle cx="12" cy="12" r="5" />
 								<line x1="12" y1="1" x2="12" y2="3" />
@@ -64,20 +48,20 @@ function Header() {
 						)}
 					</button>
 					<button
-						className={`header__hamburger ${menuOpen ? 'header__hamburger--open' : ''}`}
+						className={`md:hidden flex flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1 z-[101]`}
 						onClick={() => setMenuOpen(!menuOpen)}
 						aria-label="Toggle menu"
 					>
-						<span />
-						<span />
-						<span />
+						<span className={`block w-6 h-0.5 bg-gray-900 dark:bg-gray-100 transition-all duration-300 ${menuOpen ? 'rotate-45 translate-x-[5px] translate-y-[5px]' : ''}`} />
+						<span className={`block w-6 h-0.5 bg-gray-900 dark:bg-gray-100 transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
+						<span className={`block w-6 h-0.5 bg-gray-900 dark:bg-gray-100 transition-all duration-300 ${menuOpen ? '-rotate-45 translate-x-[5px] -translate-y-[5px]' : ''}`} />
 					</button>
-					<nav className={`header__nav ${menuOpen ? 'header__nav--open' : ''}`}>
+					<nav className={`flex gap-2 md:flex ${menuOpen ? 'fixed top-0 right-0 h-screen w-72 flex-col bg-white dark:bg-gray-900 border-l border-gray-200 dark:border-gray-800 pt-20 px-8 gap-0' : 'max-md:hidden'}`}>
 						{navItems.map((item) => (
 							<a
 								key={item.label}
 								href={item.href}
-								className="header__link"
+								className="px-4 py-2 text-sm font-medium text-gray-500 dark:text-gray-400 no-underline rounded-lg transition-all duration-200 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 md:border-0 max-md:py-4 max-md:text-lg max-md:border-b max-md:border-gray-200 max-md:dark:border-gray-800 max-md:rounded-none"
 								onClick={() => setMenuOpen(false)}
 							>
 								{item.label}

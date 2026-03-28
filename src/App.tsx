@@ -1,4 +1,4 @@
-import './App.scss';
+import { useState, useCallback, useEffect } from 'react';
 
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
@@ -9,10 +9,26 @@ import Experience from './pages/experience/experience';
 import Contact from './pages/contact/contact';
 
 function App() {
+	const [isDark, setIsDark] = useState(() => {
+		const saved = localStorage.getItem('theme');
+		if (saved === 'dark') return true;
+		if (saved === 'light') return false;
+		return !window.matchMedia('(prefers-color-scheme: light)').matches;
+	});
+
+	useEffect(() => {
+		document.documentElement.classList.toggle('dark', isDark);
+		localStorage.setItem('theme', isDark ? 'dark' : 'light');
+	}, [isDark]);
+
+	const toggleTheme = useCallback(() => {
+		setIsDark(prev => !prev);
+	}, []);
+
 	return (
-		<div className="app">
-			<Header />
-			<main>
+		<div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans transition-colors duration-300">
+			<Header isDark={isDark} onToggleTheme={toggleTheme} />
+			<main className="max-w-6xl mx-auto px-6">
 				<Hero />
 				<About />
 				<Skills />

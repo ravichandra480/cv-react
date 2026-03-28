@@ -12,15 +12,13 @@
 	}
 
 	&__card {
-		background: var(--bg-card);
-		border: 1px solid var(--border);
+		border: 1px solid var(--cds-border-subtle) !important;
 		border-radius: 16px;
 		padding: 32px;
 		transition: all $transition-speed ease;
 
 		&:hover {
-			background: var(--bg-card-hover);
-			border-color: var(--accent);
+			border-color: var(--cds-interactive) !important;
 			transform: translateY(-4px);
 		}
 
@@ -28,7 +26,7 @@
 			font-size: 18px;
 			font-weight: 700;
 			margin: 0 0 20px 0;
-			color: var(--text-primary);
+			color: var(--cds-text-primary);
 			position: relative;
 			padding-bottom: 12px;
 
@@ -39,7 +37,7 @@
 				left: 0;
 				width: 32px;
 				height: 2px;
-				background: linear-gradient(135deg, var(--accent), var(--accent-alt));
+				background: var(--cds-interactive);
 			}
 		}
 	}
@@ -51,19 +49,6 @@
 	}
 
 	&__tag {
-		display: inline-block;
-		padding: 6px 14px;
-		font-size: 13px;
-		font-weight: 500;
-		color: var(--text-secondary);
-		background: var(--tag-bg);
-		border: 1px solid var(--tag-border);
 		border-radius: 8px;
-		transition: all $transition-speed ease;
-
-		.skills__card:hover & {
-			color: var(--text-primary);
-			border-color: var(--tag-border-hover);
-		}
 	}
 }

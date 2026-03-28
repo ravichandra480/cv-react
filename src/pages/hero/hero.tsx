@@ -1,48 +1,48 @@
-import './hero.scss';
-import me from '../../images/me.jpg';
+import me from '../../images/me_1.jpg';
 
 function Hero() {
 	return (
-		<section className="hero" id="home">
-			<div className="hero__grid">
-				<div className="hero__content">
-					<div className="hero__badge">Lead Frontend Engineer</div>
-					<h1 className="hero__title">
-						Crafting <span className="hero__title--accent">Scalable</span>
+		<section className="pt-32 pb-20 md:pt-40 md:pb-28" id="home">
+			<div className="grid grid-cols-1 md:grid-cols-[1fr_340px] gap-12 items-center">
+				<div className="animate-fade-in-up">
+					<span className="inline-block px-4 py-1.5 text-xs font-semibold tracking-wider uppercase rounded-full bg-accent/10 text-accent mb-6">
+						Lead Frontend Engineer
+					</span>
+					<h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+						Crafting <span className="text-accent">Scalable</span>
 						<br />
 						Web Experiences.
 					</h1>
-					<p className="hero__subtitle">
+					<p className="mt-6 text-lg text-gray-500 dark:text-gray-400 max-w-xl leading-relaxed">
 						Hands-on Lead UI Engineer with 15+ years building enterprise-scale
 						React &amp; Angular platforms, design systems, and accessible interfaces
 						in regulated financial environments.
 					</p>
-					<div className="hero__cta">
-						<a href="#contact" className="hero__btn hero__btn--primary">Get in Touch</a>
-						<a href="#experience" className="hero__btn hero__btn--secondary">View Experience</a>
+					<div className="flex flex-wrap gap-4 mt-8">
+						<a href="#contact" className="inline-flex items-center px-7 py-3 rounded-lg bg-accent text-white font-semibold text-sm transition-all duration-200 hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/25">
+							Get in Touch
+						</a>
+						<a href="#experience" className="inline-flex items-center px-7 py-3 rounded-lg border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-semibold text-sm transition-all duration-200 hover:border-accent hover:text-accent">
+							View Experience
+						</a>
 					</div>
 				</div>
-				<div className="hero__image-wrap">
-					<img src={me} className="hero__image" alt="Ravi Chandra Ravulapati" />
+				<div className="flex justify-center md:justify-end animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+					<img src={me} className="w-64 h-64 md:w-80 md:h-80 rounded-2xl object-cover shadow-2xl ring-4 ring-accent/20" alt="Ravi Chandra Ravulapati" />
 				</div>
 			</div>
-			<div className="hero__stats">
-				<div className="hero__stat">
-					<span className="hero__stat-number">15+</span>
-					<span className="hero__stat-label">Years Experience</span>
-				</div>
-				<div className="hero__stat">
-					<span className="hero__stat-number">3</span>
-					<span className="hero__stat-label">Companies</span>
-				</div>
-				<div className="hero__stat">
-					<span className="hero__stat-number">VP</span>
-					<span className="hero__stat-label">Morgan Stanley</span>
-				</div>
-				<div className="hero__stat">
-					<span className="hero__stat-number">∞</span>
-					<span className="hero__stat-label">Passion</span>
-				</div>
+			<div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-10 border-t border-gray-200 dark:border-gray-800">
+				{[
+					{ number: '15+', label: 'Years Experience' },
+					{ number: '3', label: 'Companies' },
+					{ number: 'VP', label: 'Morgan Stanley' },
+					{ number: '∞', label: 'Passion' },
+				].map((stat) => (
+					<div className="text-center" key={stat.label}>
+						<span className="block text-3xl font-extrabold text-accent">{stat.number}</span>
+						<span className="text-sm text-gray-500 dark:text-gray-400">{stat.label}</span>
+					</div>
+				))}
 			</div>
 		</section>
 	);

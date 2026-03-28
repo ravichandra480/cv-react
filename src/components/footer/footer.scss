@@ -1,7 +1,7 @@
 @import '../../styles/variables';
 
 .footer {
-	border-top: 1px solid var(--border);
+	border-top: 1px solid var(--cds-border-subtle);
 	padding: 32px 24px;
 
 	&__inner {
@@ -21,15 +21,15 @@
 		font-size: 20px;
 		font-weight: 800;
 		letter-spacing: -1px;
-		color: var(--text-primary);
+		color: var(--cds-text-primary);
 	}
 
 	&__dot {
-		color: var(--accent);
+		color: var(--cds-link-primary);
 	}
 
 	&__copy {
 		font-size: 13px;
-		color: var(--text-secondary);
+		color: var(--cds-text-secondary);
 	}
 }
