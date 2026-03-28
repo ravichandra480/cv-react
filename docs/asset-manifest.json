@@ -1,19 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.67a33a01.css",
-    "main.js": "/static/js/main.a5f4165f.js",
+    "main.css": "/static/css/main.d6b8432a.css",
+    "main.js": "/static/js/main.f437b7cf.js",
     "static/js/377.cbc495bc.chunk.js": "/static/js/377.cbc495bc.chunk.js",
-    "static/media/ms_logo.jpg": "/static/media/ms_logo.1d03145fb08ee364ffaf.jpg",
     "static/media/me.jpg": "/static/media/me.5fbe6e0db47d70375567.jpg",
-    "static/media/FS_LOGO_GLITCH_STRIP_OUTLINE-VISA_RGB.svg": "/static/media/FS_LOGO_GLITCH_STRIP_OUTLINE-VISA_RGB.eb0616512078d2aacb7b004d9c8a61a3.svg",
-    "static/media/TCS-logo-black-CMYK.svg": "/static/media/TCS-logo-black-CMYK.08206ef471e2a663fb30332aa8e4e302.svg",
     "index.html": "/index.html",
-    "main.67a33a01.css.map": "/static/css/main.67a33a01.css.map",
-    "main.a5f4165f.js.map": "/static/js/main.a5f4165f.js.map",
+    "main.d6b8432a.css.map": "/static/css/main.d6b8432a.css.map",
+    "main.f437b7cf.js.map": "/static/js/main.f437b7cf.js.map",
     "377.cbc495bc.chunk.js.map": "/static/js/377.cbc495bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67a33a01.css",
-    "static/js/main.a5f4165f.js"
+    "static/css/main.d6b8432a.css",
+    "static/js/main.f437b7cf.js"
   ]
 }
