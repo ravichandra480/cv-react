@@ -23,6 +23,20 @@ const skillCategories = [
 		title: 'Backend Integration',
 		skills: ['REST APIs', 'Node.js', 'Java', 'Spring', 'DB2'],
 	},
+	{
+		title: 'AI-Powered Development',
+		skills: [
+			'GitHub Copilot',
+			'AI Agents',
+			'LLM Integration',
+			'Prompt Engineering',
+			'Spec-driven Development',
+			'AI Code Generation',
+			'Copilot Extensions',
+			'OpenAI API',
+			'RAG Pipelines',
+		],
+	},
 ];
 
 function Skills() {

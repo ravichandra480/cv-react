@@ -9,14 +9,14 @@ function About() {
 				</h2>
 				<div className="mt-8 space-y-4 text-gray-500 dark:text-gray-400 text-lg leading-relaxed max-w-2xl">
 					<p>
-						I'm Ravi Chandra Ravulapati — a hands-on Lead UI Engineer and Vice President at Morgan Stanley. 
+						I'm Ravi Chandra Ravulapati, a hands-on Lead UI Engineer and Vice President at Morgan Stanley. 
 						With 15+ years of experience, I specialize in designing and delivering scalable, 
 						accessible web applications using React, Angular, and TypeScript.
 					</p>
 					<p>
 						I have deep ownership of frontend architecture, design systems, and automated testing. 
 						My track record includes building and scaling UI platforms in regulated financial and 
-						enterprise environments — from monorepo architectures to micro front-ends.
+						enterprise environments from monorepo architectures to micro front-ends.
 					</p>
 				</div>
 				<div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">

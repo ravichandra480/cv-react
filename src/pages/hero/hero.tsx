@@ -6,13 +6,14 @@ function Hero() {
 			<div className="grid grid-cols-1 md:grid-cols-[1fr_340px] gap-12 items-center">
 				<div className="animate-fade-in-up">
 					<span className="inline-block px-4 py-1.5 text-xs font-semibold tracking-wider uppercase rounded-full bg-accent/10 text-accent mb-6">
-						Lead Frontend Engineer
+						Lead Engineer
 					</span>
 					<h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
-						Crafting <span className="text-accent">Scalable</span>
-						<br />
-						Web Experiences.
+						Ravi Chandra <span className="text-accent">Ravulapati</span>
 					</h1>
+					<h2 className="text-2xl sm:text-3xl font-semibold text-gray-600 dark:text-gray-300 mt-2">
+						Crafting <span className="text-accent">Scalable</span> Web Experiences.
+					</h2>
 					<p className="mt-6 text-lg text-gray-500 dark:text-gray-400 max-w-xl leading-relaxed">
 						Hands-on Lead UI Engineer with 15+ years building enterprise-scale
 						React &amp; Angular platforms, design systems, and accessible interfaces
