@@ -11,9 +11,8 @@ import Contact from './pages/contact/contact';
 function App() {
 	const [isDark, setIsDark] = useState(() => {
 		const saved = localStorage.getItem('theme');
-		if (saved === 'dark') return true;
 		if (saved === 'light') return false;
-		return !window.matchMedia('(prefers-color-scheme: light)').matches;
+		return true; // default to dark (terminal mode)
 	});
 
 	useEffect(() => {
@@ -26,7 +25,16 @@ function App() {
 	}, []);
 
 	return (
-		<div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans transition-colors duration-300">
+		<div className="scanline-overlay relative min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-mono transition-colors duration-300">
+			{/* Animated scanline beam */}
+			<div className="pointer-events-none fixed inset-0 z-[998] overflow-hidden">
+				<div className="absolute w-full h-[1px] bg-accent/10 dark:bg-accent/20 animate-scanline" />
+			</div>
+			{/* Vignette */}
+			<div
+				className="pointer-events-none fixed inset-0 z-[997]"
+				style={{ background: 'radial-gradient(ellipse at center, transparent 65%, rgba(0,0,0,0.18) 100%)' }}
+			/>
 			<Header isDark={isDark} onToggleTheme={toggleTheme} />
 			<main className="max-w-6xl mx-auto px-6">
 				<Hero />
