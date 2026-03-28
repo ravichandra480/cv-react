@@ -9,9 +9,9 @@ const SEQUENCE: { type: LineKind; text: string }[] = [
 { type: 'cmd', text: 'whoami' },
 { type: 'out', text: 'Ravi Chandra Ravulapati' },
 { type: 'cmd', text: 'cat role.txt' },
-{ type: 'out', text: 'Lead Frontend Engineer  ·  VP @ Morgan Stanley' },
+{ type: 'out', text: 'Lead Engineer  ·  VP @ Morgan Stanley' },
 { type: 'cmd', text: 'cat stack.txt' },
-{ type: 'out', text: 'React  ·  Angular  ·  TypeScript  ·  AI Agents' },
+{ type: 'out', text: 'React  ·  Angular  ·  TypeScript  ·  AI Agents ·  Java' },
 { type: 'cmd', text: 'cat location.txt' },
 { type: 'out', text: 'London, UK  ·  15+ years experience' },
 ];
