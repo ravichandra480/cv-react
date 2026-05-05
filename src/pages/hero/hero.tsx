@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import me from '../../images/me_1.jpg';
 import TerminalWindow from '../../components/terminal-window/terminal-window';
+import { gtagEvent } from '../../lib/analytics';
 
 type LineKind = 'cmd' | 'out';
 interface TermLine { type: LineKind; text: string; active?: boolean; }
@@ -106,10 +107,18 @@ return (
 
 {/* CTA */}
 <div className="flex flex-wrap gap-3 p-5 border-t border-gray-200 dark:border-gray-800">
-<a href="#contact" className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-lg bg-accent text-white font-mono font-semibold text-xs transition-all duration-200 hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/30">
+<a
+	href="#contact"
+	className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-lg bg-accent text-white font-mono font-semibold text-xs transition-all duration-200 hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/30"
+	onClick={() => gtagEvent('hero_cta', { category: 'CTA', label: 'contact', value: '#contact' })}
+>
 <span className="opacity-70">$</span> contact --email
 </a>
-<a href="#experience" className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-lg border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-mono font-semibold text-xs transition-all duration-200 hover:border-accent hover:text-accent">
+<a
+	href="#experience"
+	className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-lg border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-mono font-semibold text-xs transition-all duration-200 hover:border-accent hover:text-accent"
+	onClick={() => gtagEvent('hero_cta', { category: 'CTA', label: 'experience', value: '#experience' })}
+>
 <span className="opacity-60">$</span> cat experience.md
 </a>
 </div>

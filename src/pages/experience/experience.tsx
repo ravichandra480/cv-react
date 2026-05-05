@@ -1,4 +1,5 @@
 import TerminalWindow from '../../components/terminal-window/terminal-window';
+import { gtagEvent } from '../../lib/analytics';
 
 const experiences = [
 {
@@ -104,6 +105,7 @@ href={exp.url}
 target="_blank"
 rel="noreferrer"
 className="text-xs text-accent hover:underline"
+onClick={() => gtagEvent('experience_company_click', { category: 'Experience', label: exp.company, value: exp.url })}
 >
 {exp.company}
 </a>

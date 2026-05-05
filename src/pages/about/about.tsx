@@ -1,4 +1,5 @@
 import TerminalWindow from '../../components/terminal-window/terminal-window';
+import { gtagEvent } from '../../lib/analytics';
 
 function About() {
 return (
@@ -30,8 +31,12 @@ enterprise environments — from monorepo architectures to micro front-ends.
 </div>
 <div className="rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-800 p-4">
 <span className="block text-gray-400 dark:text-gray-500 mb-1">email:</span>
-<a href="mailto:rc.ravulapati@gmail.com" className="text-accent hover:underline break-all">
-rc.ravulapati@gmail.com
+<a
+	href="mailto:rc.ravulapati@gmail.com"
+	className="text-accent hover:underline break-all"
+	onClick={() => gtagEvent('contact_email_click', { category: 'Contact', label: 'about email', value: 'mailto:rc.ravulapati@gmail.com' })}
+>
+	rc.ravulapati@gmail.com
 </a>
 </div>
 <div className="rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-800 p-4">
