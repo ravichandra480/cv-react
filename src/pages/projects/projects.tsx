@@ -1,3 +1,5 @@
+declare module '*.scss';
+
 import './projects.scss'
 
 function Projects() {
